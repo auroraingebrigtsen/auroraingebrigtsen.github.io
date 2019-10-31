@@ -1,0 +1,44 @@
+td th 
+table {
+border: solid gray 1px;
+border-collapse: collapse;
+padding: 10px;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: red;
+}
+
+tbody tr:nth-child(even) {
+    background-color: yellow;
+}
+
+th {
+background-color:yellow;
+}
+
+ol :nth-child(even){
+color: yellow;
+list-style: none;
+}
+
+ol :nth-child(odd) {
+    color: red;
+    list-style: none;
+}
+
+body {
+    background-color:black;
+    font-family: fantasy;
+}
+
+h2 {
+    color: yellow;
+}
+
+body {
+    font-size: 3em;
+    max-width: 500px;
+    margin: auto;
+}
+
