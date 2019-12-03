@@ -1,0 +1,139 @@
+#bilder {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.bilde {
+    background-size: cover;
+    background-position: center;
+    min-height: 100px;
+    background-repeat: no-repeat;
+    filter: sepia(80%);
+    flex: 1;
+    transition: 2s;
+}
+
+.bilde:hover {
+    filter: sepia(0%);
+    flex: 5;
+    min-height: 300px;
+    background-size: contain;
+}
+
+div.bilde:nth-child(1) {
+    background-image: url("katt1.jpeg");
+}
+
+div.bilde:nth-child(2) {
+    background-image: url("påfugl1.jpg");
+}
+
+div.bilde:nth-child(3) {
+    background-image: url("dog1.jpeg");
+}
+
+div.bilde:nth-child(4) {
+    background-image: url("katt2.jpeg");
+}
+
+div.bilde:nth-child(5) {
+    background-image: url("flodhest1.jpeg");
+}
+
+div.bilde:nth-child(6) {
+    background-image: url("dog2.jpeg");
+}
+
+div.bilde:nth-child(7) {
+    background-image: url("flodhest2.jpeg");
+}
+
+div.bilde:nth-child(8) {
+    background-image: url("katt3.jpeg");
+}
+
+div.bilde:nth-child(9) {
+    background-image: url("panda1.jpg");
+}
+
+div.bilde:nth-child(10) {
+    background-image: url("påfugl2.jpg");
+}
+
+div.bilde:nth-child(11) {
+    background-image: url("dog3.jpeg");
+}
+
+div.bilde:nth-child(12) {
+    background-image: url("panda2.jpg");
+}
+
+
+input[type="checkbox"] + label {
+    opacity: 0;
+  }
+  
+  input[type="checkbox"]:checked + label {
+    opacity: 1;
+  }
+  
+  input[type="checkbox"]:checked  {
+      pointer-events: none;
+  }
+  
+  
+  input[type="checkbox"]:checked + label:after {
+    content: " ✗";
+    color: red;
+    font-size: 1.2em;
+  }
+  
+  input.riktig[type="checkbox"]:checked + label:after {
+    content: " ✔";
+    color: green;
+    font-size: 1.2em;
+  }
+  
+  /* legg alle labler for qnum oppe til venstre (spres lengre nede i css) */
+  label.qnum {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  div.quiz {
+    counter-reset: rnum 0;
+  }
+  
+  label.qnum {
+    color: blue;
+    pointer-events: none;
+    padding: 4px;
+  }
+  
+  label.qnum.count::after {
+    content: counter(rnum);
+    counter-increment: rnum 1;
+  }
+  
+  
+  div.question.count::before {
+    content: "Question " counter(rnum);
+    font-size: 1.2em;
+    color: blue;
+  }
+  
+  input[type="radio"] + div {
+    display: none;
+  }
+  
+  input[type="radio"]:checked + div {
+    display: block;
+    margin-top: 50px;
+}
+
+body {
+    background-color: yellow;
+}
