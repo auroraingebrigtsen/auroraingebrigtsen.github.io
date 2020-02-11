@@ -1,0 +1,162 @@
+#MCMeny {
+    position: relative;
+    width: 90vw;
+    height: 90vh;
+    border: solid rgba(0, 128, 0, 0) 1px;
+}
+
+td,th,
+table {
+    border: solid rgb(0, 0, 0) 2px;
+    border-collapse: collapse;
+    padding: 2px;
+    height: 50px;
+    width: 600px;
+    color: white;
+    text-align: center;
+}
+
+
+article > h1 {
+    color:  rgb(255, 217, 0);
+    text-align: center;
+}
+
+tbody {
+    background-color: rgb(58, 54, 54);
+}
+
+th {
+    background-color: rgb(161, 17, 17);
+    color: rgb(248, 223, 78); 
+}
+
+h1 {
+    color: rgb(228, 226, 226);
+    padding: 5px 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav a {
+    color: rgb(177, 175, 175);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    }
+
+header {
+    background-color:  rgb(40, 39, 39);
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.logo {
+    float: left;
+    padding: 20px 0;
+    height: 50px;
+    width: 50px;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 25px;
+
+    position: relative;
+}
+    
+
+.bilde {
+    position: absolute;
+    width: calc(98vw - 10px);
+    height: calc(80vh - 50px);
+    left: 5px;
+    top: 25px;
+    background-position: center;
+    background-size: cover;
+    opacity: 0;
+    z-index: 1;
+    transition: 1s;
+}
+
+#b1 {
+    background-image: url("bilder/BigMc.jpg");
+}
+
+#b2 {
+    background-image: url("bilder/ChicMcFeast.jpg");
+}
+
+#b3 {
+    background-image: url("bilder/frappe.jpg");
+}
+
+#b4 {
+    background-image: url("bilder/McFlurry.jpg");
+}
+
+#b5 {
+    background-image: url("bilder/1McWrap.jpg");
+}
+
+#b6 {
+    background-image: url("bilder/McNuggets.jpg");
+}
+
+#b7 {
+    background-image: url("bilder/Shake.jpg");
+}
+
+#b8 {
+    background-image: url("bilder/VegMcFeast.jpg");
+}
+
+#r1:checked~#b1 {
+    opacity: 1;
+}
+
+#r2:checked~#b2 {
+    opacity: 1;
+}
+
+#r3:checked~#b3 {
+    opacity: 1;
+}
+
+#r4:checked~#b4 {
+    opacity: 1;
+}
+
+#r5:checked~#b5 {
+    opacity: 1;
+}
+
+#r6:checked~#b6 {
+    opacity: 1;
+}
+
+#r7:checked~#b7 {
+    opacity: 1;
+}
+
+#r8:checked~#b8 {
+    opacity: 1;
+}
+
+#MCMeny input {
+    position: relative;
+    z-index: 9;
+    margin-top: 80vh;
+    background-color: rgba(20, 20, 90, 0.3);
+}
+
+#r1 {
+    margin-left: calc((90vw - 100px) / 2);
+}
+
+body {
+    background-color: black;
+}

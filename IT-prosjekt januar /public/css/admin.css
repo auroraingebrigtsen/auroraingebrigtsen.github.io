@@ -1,0 +1,77 @@
+/**
+  css for et bibliotek med custom components for
+  å manipulere databasen
+**/
+
+
+:root {
+    --light-grad: linear-gradient(125deg, rgba(255,255,255,0), rgba(255,255,255,.16));
+    --dark-grad: linear-gradient(125deg, rgba(0,0,0,0), rgba(0,0,0,.16));
+    --compWidth: 30em;
+  }
+  
+  
+  #admin {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  #admin > * {
+      justify-self: center;
+  }
+  
+  .table {
+    width: var(--compWidth);
+   
+  }
+  
+  
+  
+  home-bar {
+     /* --grad: var(--light-grad); */
+  }
+  
+  db-table {
+    margin: 2em;
+     --alternate: white;
+     --head: #afaaaa;
+  }
+
+  #total {
+    --tsize: 150px;
+  }
+
+  .total {
+    color:red;
+  }
+  
+  @media screen and (max-width: 1550px) {
+      #username , #info { display:none; }
+      #admin {
+          grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media screen and (max-width: 1054px) {
+      #username , #info { display:none; }
+      #admin {
+          grid-template-columns: 1fr;
+      }
+    }    
+
+    body {
+      background-color: rgb(32, 30, 30);
+    }
+
+    span {
+      color: white;
+    }
+
+    #svart {
+      color: black;
+    }
+
+   

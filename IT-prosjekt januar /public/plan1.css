@@ -1,0 +1,65 @@
+h1 {
+    color: rgb(7, 37, 82);
+   
+}
+h2 {
+    color: rgb(9, 61, 116);
+    
+
+}
+h3 {
+    color: rgb(19, 80, 113);
+}
+
+p {
+    font-size: 120%;
+    padding-left: 1cm;
+}
+a {
+    color: rgb(0, 20, 130)
+}
+a:visited {
+    color: rgb(82, 145, 45)
+}
+div {
+    margin-bottom: 3em;
+    font-family: sans-serif;
+}
+#links {
+    margin-bottom: 16em;
+}
+span {
+    color: blue;
+}
+
+h1,h2,h3 {
+    font-family: sans-serif;
+}
+
+#deltakere {
+    border: solid grey 2px;
+    background-color: cornsilk;
+    width: 700px;
+}
+
+#hensikt {
+    border: solid grey 2px;
+    background-color: cornsilk;
+    width: 700px;
+}
+
+#skisse {
+    border: solid grey 2px;
+    background-color: cornsilk;
+    width: 700px;
+}
+
+#links {
+    border: solid grey 2px;
+    background-color: cornsilk;
+    width: 700px;
+}
+
+body {
+    background-color: rgb(219, 237, 243);
+}

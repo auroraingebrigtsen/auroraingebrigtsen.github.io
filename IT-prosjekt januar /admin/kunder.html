@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registrer </title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="/components/DbInsert.js"></script>
+    <script src="/components/DbUpdate.js"></script>
+    <script src="/components/DbTable.js"></script>
+    <script src="/components/Homebar.js"></script>
+    <link rel="stylesheet" href="/css/admin.css">
+</head>
+
+<body>
+    <home-bar heading="Mc Donald's" crumb="meny" getlinks="/htmlfiler/admin" username="/myself">
+    </home-bar>
+    <div id="admin">
+
+        <div class="table">
+            <db-table id="table" update="kunde" fields="kundeid:hidden,fornavn,etternavn,adresse,epost,kjonn,tlf" delete="kunde"
+                sql="select * from kunde">
+                <span slot="caption">Kunder</span>
+            </db-table>
+        </div>
+
+        <db-insert id="form" fields="fornavn,etternavn" foreign="users.userid:username" table="kunde">
+            <span slot="heading">Registrer Kunde</span>
+        </db-insert>
+
+        <db-update id="update" key="kundeid" update="true" fields="fornavn,etternavn,adresse,epost,kjonn,tlf"
+            table="kunde">
+            <span slot="heading">Rediger Kunde</span>
+        </db-update>
+
+    </div>
+</body>
+
+</html>
